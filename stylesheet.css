@@ -1,0 +1,22 @@
+@import url("./destyle.css");
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+JP&display=swap");
+:root {
+  --base-h: 180;
+  --point-h: var(--base-h);
+  --accent-h: var(--base-h);
+
+  --base-s: 10%;
+  --point-s: calc(var(--base-l));
+  --accent-s: calc(var(--base-l));
+
+  --base-l: 10%;
+  --point-l: calc(var(--base-l) + 10%);
+  --accent-l: calc(var(--base-l) + 20%);
+}
+* {
+  font-family: "Noto Sans JP", sans-serif;
+}
+img {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
