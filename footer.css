@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.footer.f-even {
+  background: hsl(var(--base-h), var(--base-s), calc(100% - var(--base-l)));
+  color: hsla(var(--base-h), var(--base-s), var(--base-l), 0.5);
+}
+
+.footer.f-odd {
+  background: hsl(var(--base-h), var(--base-s), var(--base-l));
+  color: hsla(var(--base-h), var(--base-s), calc(100% - var(--base-l)), 0.5);
+}
+
+.footer .links {
+  display: flex;
+  gap: 2rem;
+}
