@@ -1,0 +1,157 @@
+! <!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <title>Welcom FoxTech!</title>
+  </head>
+  <body>
+    <header class="header">
+      <div id="logo"></div>
+      <nav>
+        <a href="./profile.html" class="h-profile h-icon">
+          <div class="icon-image"></div>
+          <p>profile</p>
+        </a>
+        <a href="./atcoder.html" class="h-atcoder h-icon">
+          <div class="icon-image"></div>
+          <p>atcoder</p>
+        </a>
+        <a href="./embed.html" class="h-embed h-icon">
+          <div class="icon-image"></div>
+          <p>embed</p>
+        </a>
+        <a href="./3d-print.html" class="h-3d-print h-icon">
+          <div class="icon-image"></div>
+          <p>3d print</p>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div id="profile" class="content">
+        <div class="content-wrap">
+          <h1>Profile</h1>
+          <div class="two-panel">
+            <div class="two-panel-item icon">
+              <div class="img-wrap">
+                <img src="./res/profile/fox-icon.png" alt="" />
+              </div>
+            </div>
+            <div class="two-panel-item text">
+              <p class="accent-text">ちょっとばかし</p>
+              <p class="accent-text">
+                つよつよエンジニアになってみたい、という心持ち。
+              </p>
+            </div>
+          </div>
+          <a href="./profile.html" class="read-more">ReadMore</a>
+        </div>
+      </div>
+      <div id="atcoder" class="content">
+        <div class="content-wrap">
+          <h1>AtCoder</h1>
+          <div class="two-panel rev">
+            <div class="two-panel-item icon">
+              <div class="img-wrap" style="background: white">
+                <img src="./res/atcoder/logo_bk.svg" alt="" />
+              </div>
+            </div>
+            <div class="two-panel-item text">
+              <p class="accent-text">
+                計算量爆発<br />アルゴリズム<br />様々な思考を巡らせ、解法にたどり着いたときの<br />楽しさ。
+              </p>
+            </div>
+          </div>
+          <a href="./profile.html" class="read-more">ReadMore</a>
+        </div>
+      </div>
+      <div id="embed" class="content">
+        <div class="content-wrap">
+          <h1>Embed</h1>
+          <div class="two-panel">
+            <div class="two-panel-item icon">
+              <div class="img-wrap" style="background: white">
+                <img src="./res/embed/arduino.png" alt="" />
+              </div>
+            </div>
+            <div class="two-panel-item text">
+              <p class="accent-text">
+                目に見えて、<br />組み込んだソフトウェアが動き出す<br />その楽しさ
+              </p>
+            </div>
+          </div>
+          <a href="./profile.html" class="read-more">ReadMore</a>
+        </div>
+      </div>
+      <div id="3d-print" class="content">
+        <div class="content-wrap">
+          <h1>3d Print</h1>
+          <div class="two-panel rev">
+            <div class="two-panel-item icon">
+              <div class="img-wrap" style="background: white">
+                <img src="./res/3d-print/3d_printer.png" alt="" />
+              </div>
+            </div>
+            <div class="two-panel-item text">
+              <p class="accent-text">
+                こんなパーツがほしい<br />
+                そんなちょっとした<br />願望を実現できる<br />
+                その楽しさ
+              </p>
+            </div>
+          </div>
+          <a href="./profile.html" class="read-more">ReadMore</a>
+        </div>
+      </div>
+      <div id="contact" class="content">
+        <div class="content-wrap">
+          <h1>Contact</h1>
+          <form action="" class="contact-box">
+            <div class="input-list">
+              <div class="input-label"><p>Your Name</p></div>
+              <div class="input-text"><input type="text" /></div>
+            </div>
+            <div class="input-list">
+              <div class="input-label"><p>Your Email</p></div>
+              <div class="input-text"><input type="text" /></div>
+            </div>
+            <div class="input-list">
+              <div class="input-label"><p>Your Name</p></div>
+              <div class="input-text">
+                <textarea id="" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="input-list">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer f-even">
+      <script>
+        const content_num = document.getElementsByClassName("content").length;
+        const is_odd = content_num % 2;
+        const footer_elm = document.getElementsByClassName("footer")[0];
+        if (is_odd === 1) {
+          footer_elm.classList.remove("f-even");
+          footer_elm.classList.add("f-odd");
+        } else {
+          footer_elm.classList.remove("f-odd");
+          footer_elm.classList.add("f-even");
+        }
+      </script>
+      <div class="links">
+        <a href="./profile.html">profile</a>
+        <a href="./atcoder.html">atcoder</a>
+        <a href="./embed.html">embed</a>
+        <a href="./3d-print.html">3d-print</a>
+      </div>
+      <p>CopyRight © 2021-2022 Kanzaki</p>
+    </footer>
+  </body>
+</html>
